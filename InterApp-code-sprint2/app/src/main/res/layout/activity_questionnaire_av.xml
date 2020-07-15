@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".QuestionnaireActivityAV">
+
+    <TextView
+        android:id="@+id/banner4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:background="@mipmap/interapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textSituation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/situation"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLocationAV" />
+
+    <TextView
+        android:id="@+id/textLocationAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/location"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLanguageAV" />
+
+    <TextView
+        android:id="@+id/textLanguageAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/language"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountryAV" />
+
+    <TextView
+        android:id="@+id/textCountryAV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/birth"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInstructions" />
+
+    <TextView
+        android:id="@+id/textInstructions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="9dp"
+        android:text="@string/instructions"
+        android:textColor="#333333"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/volBtnInstructions"
+        app:layout_constraintTop_toBottomOf="@+id/banner4" />
+
+    <Button
+        android:id="@+id/volBtnInstructions"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/button_volume"
+        android:onClick="playOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner4" />
+
+    <Button
+        android:id="@+id/volBtnCountry"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_volume"
+        android:onClick="playOnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner4" />
+
+    <Button
+        android:id="@+id/volBtnLanguage"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_volume"
+        android:onClick="playOnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volBtnCountry" />
+
+    <Button
+        android:id="@+id/volBtnLocation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_volume"
+        android:onClick="playOnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volBtnLanguage" />
+
+    <Button
+        android:id="@+id/volBtnSituation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:background="@drawable/button_volume"
+        android:onClick="playOnClick"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volBtnLocation" />
+
+    <Button
+        android:id="@+id/recBtnCountry"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_record"
+        android:onClick="recordOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountryAV" />
+
+    <Button
+        android:id="@+id/recBtnLanguage"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_record"
+        android:onClick="recordOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLanguageAV" />
+
+    <Button
+        android:id="@+id/recBtnLocation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_record"
+        android:onClick="recordOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLocationAV" />
+
+    <Button
+        android:id="@+id/recBtnSituation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="53dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_record"
+        android:onClick="recordOnClick"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSituation2" />
+
+    <Button
+        android:id="@+id/playBtnCountry"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_privacy"
+        android:onClick="playOnClick"
+        app:layout_constraintStart_toEndOf="@+id/recBtnCountry"
+        app:layout_constraintTop_toBottomOf="@+id/textCountryAV" />
+
+    <Button
+        android:id="@+id/playBtnLanguage"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_privacy"
+        android:onClick="playOnClick"
+        app:layout_constraintStart_toEndOf="@+id/recBtnLanguage"
+        app:layout_constraintTop_toBottomOf="@+id/textLanguageAV" />
+
+    <Button
+        android:id="@+id/playBtnLocation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_privacy"
+        android:onClick="playOnClick"
+        app:layout_constraintStart_toEndOf="@+id/recBtnLocation"
+        app:layout_constraintTop_toBottomOf="@+id/textLocationAV" />
+
+    <Button
+        android:id="@+id/playBtnSituation"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="54dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/button_privacy"
+        android:onClick="playOnClick"
+        app:layout_constraintStart_toEndOf="@+id/recBtnSituation"
+        app:layout_constraintTop_toBottomOf="@+id/textSituation2" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_submit"
+        android:onClick="submitSurveyAV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="76dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_cancel"
+        android:onClick="exitSurveyAV"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

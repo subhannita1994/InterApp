@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".ValidationActivity">
+
+    <TextView
+        android:id="@+id/banner5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="87dp"
+        android:layout_marginLeft="87dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        android:background="@mipmap/interapp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/submitBtnValidation"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorCheckbox"
+        android:onClick="submitSurveyValidation"
+        android:text="@string/submitBtn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputSituationValidation" />
+
+    <EditText
+        android:id="@+id/textInputSituationValidation"
+        android:layout_width="380dp"
+        android:layout_height="194dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorCheckbox"
+        android:textColorHint="#000000"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textSituationValidation" />
+
+    <TextView
+        android:id="@+id/textSituationValidation"
+        android:layout_width="261dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/situation"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLocationValidation" />
+
+    <EditText
+        android:id="@+id/textInputLocationValidation"
+        android:layout_width="380dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:autofillHints="AUTOFILL_HINT_POSTAL_ADDRESS"
+        android:inputType="text"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textColorHighlight="@color/colorCheckbox"
+        android:textColorHint="#000000"
+        android:textCursorDrawable="@null"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLocationValidation" />
+
+    <TextView
+        android:id="@+id/textLocationValidation"
+        android:layout_width="337dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/location"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLanguageValidation" />
+
+    <com.example.interapp.MultiSpinner
+        android:id="@+id/spinnerLanguageValidation"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:background="#CECECE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textLanguageValidation" />
+
+    <TextView
+        android:id="@+id/textLanguageValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:text="@string/language"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBirthValidation" />
+
+    <Spinner
+        android:id="@+id/spinnerBirthValidation"
+        android:layout_width="256dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginLeft="116dp"
+        android:background="#CECECE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textBirthValidation" />
+
+    <TextView
+        android:id="@+id/textBirthValidation"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/birth"
+        android:textColor="#333333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/banner5" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

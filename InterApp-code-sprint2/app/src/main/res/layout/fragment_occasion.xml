@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="460dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/textLocation"
+                android:layout_width="300dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/location"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textSituation"
+                android:layout_width="261dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/situation"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textInputLocation" />
+
+            <EditText
+                android:id="@+id/textInputLocation"
+                android:layout_width="380dp"
+                android:layout_height="87dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:autofillHints="AUTOFILL_HINT_POSTAL_ADDRESS"
+                android:backgroundTint="@color/colorCheckbox"
+                android:inputType="text"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorCheckbox"
+                android:textColorHint="#000000"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textLocation" />
+
+
+            <EditText
+                android:id="@+id/textInputSituation"
+                android:layout_width="380dp"
+                android:layout_height="294dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/colorCheckbox"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:scrollbars="vertical"
+                android:textColor="#000000"
+                android:textColorHighlight="@color/colorCheckbox"
+                android:textColorHint="#000000"
+                android:textCursorDrawable="@null"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textSituation" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+<RelativeLayout
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:gravity="bottom">
+
+    <Button
+        android:id="@+id/prevBtnOccasion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorCheckbox"
+        android:onClick="prevSurvey"
+        android:text="@string/prevBtn" />
+
+
+    <Button
+        android:id="@+id/exitBtnOccasion"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorCheckbox"
+        android:onClick="exitSurvey"
+        android:text="@string/exitBtn" />
+
+
+    <Button
+        android:id="@+id/submitBtn"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorCheckbox"
+        android:onClick="submitSurvey"
+        android:text="@string/submitBtn" />
+
+
+</RelativeLayout>
+
+</LinearLayout>

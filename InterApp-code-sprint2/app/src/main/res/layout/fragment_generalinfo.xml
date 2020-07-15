@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="460dp"
+        android:layout_weight="0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+
+            <TextView
+                android:id="@+id/textAge"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/age"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerAge"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerAge" />
+
+            <TextView
+                android:id="@+id/textEthnicIdentity"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/ethnicIdentity"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textLanguage" />
+
+            <Spinner
+                android:id="@+id/spinnerBirth"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerCitizenship" />
+
+            <Spinner
+                android:id="@+id/spinnerReligion"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerEthnicIdentity" />
+
+            <TextView
+                android:id="@+id/textReligion"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/religion"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textEthnicIdentity" />
+
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="49dp"
+                android:text="@string/gender"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textAge" />
+
+            <Spinner
+                android:id="@+id/spinnerCitizenship"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerGender" />
+
+            <TextView
+                android:id="@+id/textLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/language"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBirth" />
+
+            <Spinner
+                android:id="@+id/spinnerEthnicIdentity"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerLanguage" />
+
+            <TextView
+                android:id="@+id/textBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/birth"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textCitizenship" />
+
+
+            <com.example.interapp.MultiSpinner
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerBirth" />
+
+
+            <TextView
+                android:id="@+id/textCitizenship"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/citizenship"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textGender" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/nextBtnGeneralInfo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorCheckbox"
+            android:onClick="nextSurvey"
+            android:text="@string/nextBtn" />
+
+
+        <Button
+            android:id="@+id/exitBtnGeneralInfo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorCheckbox"
+            android:onClick="exitSurvey"
+            android:text="@string/exitBtn" />
+
+    </RelativeLayout>
+</LinearLayout>

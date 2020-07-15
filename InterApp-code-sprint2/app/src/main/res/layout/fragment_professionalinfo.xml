@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="460dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF">
+
+            <TextView
+                android:id="@+id/textEducation"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/education"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textProfession"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="49dp"
+                android:text="@string/profession"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textEducation" />
+
+            <TextView
+                android:id="@+id/textProfessionalTraining"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/professionalTraining"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textProfession" />
+
+            <TextView
+                android:id="@+id/textEmployerCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/employerCategory"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textProfessionalTraining" />
+
+            <TextView
+                android:id="@+id/textEmployerDomain"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/employerDomain"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textEmployerCategory" />
+
+            <TextView
+                android:id="@+id/textJobPosition"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/jobPosition"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textEmployerDomain" />
+
+            <TextView
+                android:id="@+id/textFrequency"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:text="@string/frequency"
+                android:textColor="#333333"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textJobPosition" />
+
+            <Spinner
+                android:id="@+id/spinnerFrequency"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="3dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textFrequency" />
+
+            <Spinner
+                android:id="@+id/spinnerEducation"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerProfession"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinnerEducation" />
+
+            <Spinner
+                android:id="@+id/spinnerProfessionalTraining"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerProfession" />
+
+            <Spinner
+                android:id="@+id/spinnerEmployerCategory"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerProfessionalTraining" />
+
+            <Spinner
+                android:id="@+id/spinnerEmployerDomain"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerEmployerCategory" />
+
+
+            <Spinner
+                android:id="@+id/spinnerJobPosition"
+                android:layout_width="256dp"
+                android:layout_height="42dp"
+                android:layout_marginStart="116dp"
+                android:layout_marginLeft="116dp"
+                android:layout_marginTop="33dp"
+                android:background="#CECECE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerEmployerDomain" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/prevBtnProfessionalInfo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorCheckbox"
+            android:onClick="prevSurvey"
+            android:text="@string/prevBtn" />
+
+        <Button
+            android:id="@+id/exitBtnProfessionalInfo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorCheckbox"
+            android:onClick="exitSurvey"
+            android:text="@string/exitBtn" />
+
+        <Button
+            android:id="@+id/nextBtnprofessionalInfo"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorCheckbox"
+            android:onClick="nextSurvey"
+            android:text="@string/nextBtn" />
+    </RelativeLayout>
+</LinearLayout>

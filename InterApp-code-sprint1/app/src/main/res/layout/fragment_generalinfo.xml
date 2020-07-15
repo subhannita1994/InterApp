@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C91C2221">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textAge"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/age"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textGender"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/gender"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textAge" />
+
+            <Spinner
+                android:id="@+id/spinnerAge"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerAge" />
+
+            <TextView
+                android:id="@+id/textCitizenship"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/citizenship"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textGender" />
+
+            <TextView
+                android:id="@+id/textBirth"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/birth"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textCitizenship" />
+
+            <Spinner
+                android:id="@+id/spinnerCitizenship"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerGender" />
+
+            <Spinner
+                android:id="@+id/spinnerBirth"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerCitizenship" />
+
+            <Spinner
+                android:id="@+id/spinnerLanguage"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerBirth" />
+
+            <Spinner
+                android:id="@+id/spinnerEthnicIdentity"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerLanguage" />
+
+            <Spinner
+                android:id="@+id/spinnerReligion"
+                android:layout_width="186dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="16dp"
+                android:background="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerEthnicIdentity" />
+
+            <TextView
+                android:id="@+id/textLanguage"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/language"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textBirth" />
+
+            <TextView
+                android:id="@+id/textEthnicIdentity"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/ethnicIdentity"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textLanguage" />
+
+            <TextView
+                android:id="@+id/textReligion"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/religion"
+                android:textColor="#FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textEthnicIdentity" />
+
+
+            <Button
+                android:id="@+id/nextBtnGeneralInfo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="nextSurvey"
+                android:text="@string/nextBtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerReligion" />
+
+
+            <Button
+                android:id="@+id/exitBtnGeneralInfo"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:onClick="exitSurvey"
+                android:text="@string/exitBtn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinnerReligion" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

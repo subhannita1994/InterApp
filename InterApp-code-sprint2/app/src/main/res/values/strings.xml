@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">InterApp</string>
+    <string name="description">The best tool for your intercultural research</string>
+    <string name="startBtn">Start</string>
+    <string name="disclaimerText">Interapp collects intercultural situations anonymously</string>
+    <string name="disclaimerAgreement">I have read, understood and accepted the above Terms and Conditions</string>
+    <string name="nextBtn">Next</string>
+    <string name="generalInfo">General Info</string>
+    <string name="profInfo">Professional Info</string>
+    <string name="occasion">Occasion</string>
+    <string name="age">Age</string>
+    <string-array name="age_array">
+        <item>Select an age range</item>
+        <item>younger than 18</item>
+        <item>18-21</item>
+        <item>22-34</item>
+        <item>35-40</item>
+        <item>41-49</item>
+        <item>50-64</item>
+        <item>65-75</item>
+        <item>older than 75</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Select a gender</item>
+        <item>Male</item>
+        <item>Female</item>
+        <item>Non-binary</item>
+        <item>Other</item>
+    </string-array>
+    <string name="gender">Gender</string>
+    <string name="citizenship">Citizenship</string>
+    <string name="birth">Country of birth (*Required)</string>
+    <string name="language">Spoken Language (*Required)</string>
+    <string name="ethnicIdentity">Ethnic Identity</string>
+    <string name="religion">Religion</string>
+    <string name="education">Education</string>
+    <string name="profession">Profession</string>
+    <string name="professionalTraining">Professional Training</string>
+    <string name="employerCategory">Employer Category</string>
+    <string name="employerDomain">Employer Domain</string>
+    <string name="jobPosition">Job Position</string>
+    <string name="frequency">Frequency of contact with people of immigrant origin</string>
+    <string-array name="frequency_array">
+        <item>Select a value</item>
+        <item>Always</item>
+        <item>Very high</item>
+        <item>High</item>
+        <item>Moderate</item>
+        <item>Rare</item>
+        <item>Never</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string-array name="ethnic_array">
+        <item>Select an ethnicity</item>
+        <item>American Indian or Alaska native</item>
+        <item>Asian</item>
+        <item>Black or African American</item>
+        <item>Hispanic or Latino</item>
+        <item>Native Hawaiian or other Pacific Islander</item>
+        <item>White</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string-array name="education_array">
+        <item>Select an education</item>
+        <item>Primary</item>
+        <item>High School</item>
+        <item>Diploma</item>
+        <item>Bachelor\'s</item>
+        <item>Master\'s</item>
+        <item>Doctorate</item>
+        <item>Post-Doctorate</item>
+        <item>Other</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <string name="exitBtn">Cancel</string>
+    <string name="relation">Relation to person involved in situation</string>
+    <string name="location">Where did the interaction occur? (*Required)</string>
+    <string name="situation">Describe the situation (*Required)</string>
+    <string name="prevBtn">Previous</string>
+    <string name="submitBtn">Submit</string>
+    <string-array name="relation_array">
+        <item></item>
+        <item>Myself</item>
+        <item>Family member</item>
+        <item>Acquaintance or Friend</item>
+        <item>Unknown or observer</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string name="candidate">Please enter the details of the person who was directly involved in the situation:</string>
+    <string-array name="religion_array">
+        <item>Select a religion</item>
+        <item>Atheist</item>
+        <item>Agnostic</item>
+        <item>Hinduism</item>
+        <item>Buddhism</item>
+        <item>Islam</item>
+        <item>Confucianism</item>
+        <item>Christianity</item>
+        <item>Taoism</item>
+        <item>Judaism</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <string name="acknowledgement">Thank you for submitting your answers!</string>
+    <string name="startNew">Start another survey!</string>
+    <string-array name="profession_array">
+        <item>Select a Profession</item>
+        <item>Dentist</item>
+        <item>Not Applicable</item>
+        <item>Accountant</item>
+        <item>Electrician</item>
+        <item>Chef</item>
+        <item>Farmer</item>
+        <item>Firefighter</item>
+        <item>Hairdresser</item>
+        <item>Health professional</item>
+        <item>Lawyer</item>
+        <item>Librarian</item>
+        <item>Mechanic</item>
+        <item>Nurse</item>
+        <item>Operator</item>
+        <item>Pharmacist</item>
+        <item>Physician</item>
+        <item>Plumber</item>
+        <item>Police officer</item>
+        <item>Real Estate agent</item>
+        <item>Surveyor</item>
+        <item>Tailor</item>
+        <item>Teacher</item>
+        <item>Technician</item>
+        <item>Technologist</item>
+        <item>Tradesman</item>
+        <item>Veterinarian</item>
+        <item>Waiting staff</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string-array name="professional_training_array">
+        <item>Select an answer</item>
+        <item>Yes</item>
+        <item>No</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string-array name="employer_domain_array">
+        <item>Select an employer</item>
+        <item>Automotive</item>
+        <item>Banks</item>
+        <item>Education</item>
+        <item>Apparel</item>
+        <item>HealthCare</item>
+        <item>Law Enforcement</item>
+        <item>Manufacturing</item>
+        <item>Food and beverage industry</item>
+        <item>Labor</item>
+        <item>Government</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <string-array name="job_position_array">
+        <item>Select a job position</item>
+        <item>CEO</item>
+        <item>Employee</item>
+        <item>Manager</item>
+        <item>Not Applicable</item>
+    </string-array>
+    <string-array name="employer_category_array">
+        <item>Select a category</item>
+        <item>Private</item>
+        <item>Public</item>
+        <item>NGO</item>
+        <item>Not applicable</item>
+    </string-array>
+    <string name="instructions">Instructions</string>
+</resources>
